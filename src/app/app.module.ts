@@ -7,6 +7,7 @@ import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { EmpentryComponent } from './empentry/empentry.component';
 import { EmpviewComponent } from './empview/empview.component';
 import { EmpsearchComponent } from './empsearch/empsearch.component';
+import { EmpdeleteComponent } from './empdelete/empdelete.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { EmpsearchComponent } from './empsearch/empsearch.component';
     AdminLoginComponent,
     EmpentryComponent,
     EmpviewComponent,
-    EmpsearchComponent
+    EmpsearchComponent,
+    EmpdeleteComponent
   ],
   imports: [
     BrowserModule,
