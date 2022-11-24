@@ -8,6 +8,7 @@ import { EmpentryComponent } from './empentry/empentry.component';
 import { EmpviewComponent } from './empview/empview.component';
 import { EmpsearchComponent } from './empsearch/empsearch.component';
 import { EmpdeleteComponent } from './empdelete/empdelete.component';
+import { EmpeditComponent } from './empedit/empedit.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { EmpdeleteComponent } from './empdelete/empdelete.component';
     EmpentryComponent,
     EmpviewComponent,
     EmpsearchComponent,
-    EmpdeleteComponent
+    EmpdeleteComponent,
+    EmpeditComponent
   ],
   imports: [
     BrowserModule,
