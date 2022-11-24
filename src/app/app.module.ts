@@ -9,6 +9,35 @@ import { EmpviewComponent } from './empview/empview.component';
 import { EmpsearchComponent } from './empsearch/empsearch.component';
 import { EmpdeleteComponent } from './empdelete/empdelete.component';
 import { EmpeditComponent } from './empedit/empedit.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { RouterModule, Routes } from '@angular/router';
+const myrout:Routes=[
+  {
+    path:"",
+    component:AdminLoginComponent
+  
+  },
+  {
+    path:"entry",
+    component:EmpentryComponent
+  },
+  {
+    path:"view",
+    component:EmpviewComponent
+  },
+  {
+    path:"search",
+    component:EmpsearchComponent
+  },
+  {
+    path:"delete",
+    component:EmpdeleteComponent
+  },
+  {
+    path:"edit",
+    component:EmpeditComponent
+  }
+]
 
 @NgModule({
   declarations: [
@@ -18,11 +47,13 @@ import { EmpeditComponent } from './empedit/empedit.component';
     EmpviewComponent,
     EmpsearchComponent,
     EmpdeleteComponent,
-    EmpeditComponent
+    EmpeditComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(myrout)
   ],
   providers: [],
   bootstrap: [AppComponent]
